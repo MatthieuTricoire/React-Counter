@@ -1,38 +1,65 @@
-.App {
-  text-align: center;
-}
+/* GOOGLE FONT IMPORT */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Utility */
+.row {
   display: flex;
-  flex-direction: column;
+}
+
+.reset-button {
+  background-color: transparent;
+  border-width: 0;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  padding: 0;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+/* General */
+body {
+  font-family: Montserrat;
+  color: black;
+  font-size: 96px;
+}
+
+/* Header */
+header {
+  height: 80px;
+  padding-inline: 3rem;
+  gap: 50px;
+  align-items: center;
+}
+
+.header__logo {
+  height: 100%;
+}
+.header__title {
+  font-size: 20px;
+}
+
+/* Section */
+.counter {
+  margin-top: 30vh;
+  justify-content: center;
+}
+.action {
+  height: 100px;
+  gap: 30px;
+  align-items: center;
+}
+.result {
+  width: 100px;
+  color: white;
+  font-size: 96px;
+  background-color: hsla(249, 61%, 55%, 1);
+  border-radius: 20px;
+  padding: 2rem;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
