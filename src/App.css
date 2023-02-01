@@ -5,8 +5,12 @@
 .row {
   display: flex;
 }
+.column {
+  display: flex;
+  flex-direction: column;
+}
 
-.reset-button {
+.reset-btn {
   background-color: transparent;
   border-width: 0;
   font-family: inherit;
@@ -24,7 +28,7 @@
 /* General */
 body {
   font-family: Montserrat;
-  color: black;
+  color: white;
   font-size: 96px;
 }
 
@@ -41,25 +45,36 @@ header {
 }
 .header__title {
   font-size: 20px;
+  color: black;
 }
 
 /* Section */
 .counter {
   margin-top: 30vh;
+  align-items: center;
   justify-content: center;
+  gap: 10px;
 }
 .action {
-  height: 100px;
   gap: 30px;
   align-items: center;
 }
 .result {
   width: 100px;
-  color: white;
-  font-size: 96px;
   background-color: hsla(249, 61%, 55%, 1);
   border-radius: 20px;
   padding: 2rem;
   align-items: center;
   justify-content: center;
+}
+
+.reset {
+  margin: 0 auto;
+  border-radius: 20px;
+  background-color: hsla(249, 61%, 55%, 1);
+  padding: 30px;
+}
+.btn-reset {
+  color: white;
+  font-size: 30px;
 }
