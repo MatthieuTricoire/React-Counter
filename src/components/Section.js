@@ -8,8 +8,6 @@ const Section = () => {
         <button
           className={`minus
           reset-button ${counter < 1 && "hidden"}`}
-          //   <span className={counter <= 10 ? "green" : "red"}>{counter}</span>
-
           onClick={() => {
             setCounter(counter - 1);
           }}
